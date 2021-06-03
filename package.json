@@ -73,5 +73,9 @@
     "accessor",
     "set",
     "setter"
-  ]
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
 }
