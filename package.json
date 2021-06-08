@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-define-write-only-accessor",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "Define a write-only accessor.",
   "license": "Apache-2.0",
   "author": {
