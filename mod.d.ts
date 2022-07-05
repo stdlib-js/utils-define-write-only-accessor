@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { PropertyName } from '@stdlib/types/object';
 
 /**
-* Define a write-only accessor.
+* Setter function.
 *
-* @module @stdlib/utils-define-write-only-accessor
+* @param value - property value
+*/
+type Setter = ( x: any ) => void;
+
+/**
+* Defines a write-only accessor.
+*
+* ## Notes
+*
+* -   Write-only accessors are enumerable and non-configurable.
+*
+* @param obj - object on which to define the property
+* @param prop - property name
+* @param setter - accessor
 *
 * @example
-* var setWriteOnlyAccessor = require( '@stdlib/utils-define-write-only-accessor' );
-*
 * var obj = {};
 * var val = '';
 *
@@ -37,12 +52,9 @@
 *
 * obj.foo = 'beep';
 */
-
-// MODULES //
-
-var setWriteOnlyAccessor = require( './main.js' );
+declare function setWriteOnlyAccessor( obj: any, prop: PropertyName, setter: Setter ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
 
-module.exports = setWriteOnlyAccessor;
+export = setWriteOnlyAccessor;
