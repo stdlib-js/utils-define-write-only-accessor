@@ -24,38 +24,30 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a **write-only** accessor.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-write-only-accessor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-setWriteOnlyAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var setWriteOnlyAccessor = require( 'path/to/vendor/umd/utils-define-write-only-accessor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.setWriteOnlyAccessor;
-})();
-</script>
+var setWriteOnlyAccessor = require( '@stdlib/utils-define-write-only-accessor' );
 ```
 
 #### setWriteOnlyAccessor( obj, prop, setter )
@@ -98,13 +90,8 @@ var bool = ( val === 'boop' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var setWriteOnlyAccessor = require( '@stdlib/utils-define-write-only-accessor' );
 
 function Foo( secret ) {
     if ( !(this instanceof Foo) ) {
@@ -121,11 +108,6 @@ function Foo( secret ) {
 var foo = new Foo( 'beep' );
 
 foo.secret = 'boop';
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -140,9 +122,9 @@ foo.secret = 'boop';
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]</span><span class="delimiter">: </span><span class="description">define a read-only property.</span>
--   <span class="package-name">[`@stdlib/utils/define-read-only-accessor`][@stdlib/utils/define-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a read-only accessor.</span>
--   <span class="package-name">[`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a read-write accessor.</span>
+-   <span class="package-name">[`@stdlib/utils-define-read-only-property`][@stdlib/utils/define-read-only-property]</span><span class="delimiter">: </span><span class="description">define a read-only property.</span>
+-   <span class="package-name">[`@stdlib/utils-define-read-only-accessor`][@stdlib/utils/define-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a read-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils-define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a read-write accessor.</span>
 
 </section>
 
@@ -217,15 +199,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-write-only-accessor/main/LICENSE
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils-define-read-only-property/tree/umd
+[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils-define-read-only-property
 
-[@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils-define-read-only-accessor/tree/umd
+[@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils-define-read-only-accessor
 
-[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor/tree/umd
+[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils-define-read-write-accessor
 
 <!-- </related-links> -->
 
