@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import setWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@esm/index.mjs';
+import setWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@v0.1.0-esm/index.mjs';
 ```
 
 #### setWriteOnlyAccessor( obj, prop, setter )
@@ -91,7 +91,7 @@ var bool = ( val === 'boop' );
 <body>
 <script type="module">
 
-import setWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@esm/index.mjs';
+import setWriteOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@v0.1.0-esm/index.mjs';
 
 function Foo( secret ) {
     if ( !(this instanceof Foo) ) {
