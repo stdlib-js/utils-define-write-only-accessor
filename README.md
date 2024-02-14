@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-setWriteOnlyAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js' )
+setWriteOnlyAccessor = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@v0.2.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var setWriteOnlyAccessor = require( 'path/to/vendor/umd/utils-define-write-only-
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@v0.2.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -113,7 +113,7 @@ var bool = ( val === 'boop' );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-write-only-accessor@v0.2.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
